@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +7,15 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+
+@layer base {
+  :root {
+    --color-primary: #BD0526;
+    --color-accent: #F2C526;
+    --color-secondary: #0C0E1E;
+    --color-text: #FFFF;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,7 +31,7 @@ body {
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--color-primary))
     )
     rgb(var(--background-start-rgb));
 }
